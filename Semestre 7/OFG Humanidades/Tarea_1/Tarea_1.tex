@@ -1,0 +1,191 @@
+\documentclass[12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{draftwatermark}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usepackage{hyperref}
+
+\setstretch{1.25}
+
+\setlength{\parindent}{0pt}
+
+\hypersetup{
+colorlinks=true,
+urlcolor=blue
+}
+
+% marca de agua
+\SetWatermarkText{DECLASSIFIED}
+\SetWatermarkScale{4}
+\SetWatermarkColor[gray]{0.9}
+
+% sello rojo inclinado
+\AddToShipoutPictureBG{
+\begin{tikzpicture}[remember picture,overlay]
+\node[rotate=25,scale=6,text opacity=0.07]
+at (current page.center)
+{\textcolor{red}{DESCLASIFICADO}};
+\end{tikzpicture}
+}
+
+% títulos
+\titleformat{\section}
+{\normalfont\normalsize\bfseries}
+{\thesection}{1em}{}
+
+% encabezado
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Archivo de Inteligencia — División de Análisis}
+\fancyhead[R]{Documento INT-CR-042}
+\fancyfoot[C]{\thepage}
+
+% censura
+\newcommand{\rw}[1]{%
+\tikz[baseline=(text.base)]{
+\node[inner sep=1pt] (text) {#1};
+\fill[black] (text.south west) rectangle (text.north east);
+}}
+
+\begin{document}
+
+\begin{center}
+
+\includegraphics[width=2.5cm]{agency_logo.png}
+
+\vspace{0.3cm}
+
+\textbf{ARCHIVO DE INTELIGENCIA}
+
+Documento parcialmente desclasificado
+
+Código de archivo: INT-CR-042
+
+\vspace{0.4cm}
+
+\textbf{CLASIFICACIÓN ORIGINAL: SECRETO}
+
+\textbf{ESTADO ACTUAL: DESCLASIFICADO PARCIALMENTE}
+
+\end{center}
+
+\vspace{0.8cm}
+
+\section*{Acceso Restringido al Archivo Digital}
+
+Como parte del proceso de desclasificación parcial del expediente
+INT-CR-042, una copia digital de los registros asociados a esta
+investigación ha sido transferida a un sistema de consulta externo
+habilitado exclusivamente para revisión autorizada.
+
+El acceso a dicho sistema se encuentra limitado a personal con
+credenciales válidas y a evaluadores designados para el presente
+proceso de revisión académica.
+
+Terminal autorizada de consulta:
+
+\begin{center}
+\texttt{\href{https://tomasinfante.github.io/archivos-clasificados/}{[ ACCESO TERMINAL — INT-CR-042 ]}}
+\end{center}
+
+La terminal reproduce la estructura del repositorio original de
+documentos utilizado durante el desarrollo de esta investigación.
+Algunos archivos permanecen restringidos o parcialmente censurados
+de acuerdo con las políticas de clasificación vigentes.
+
+\section*{Resumen Ejecutivo}
+
+Durante décadas, la investigación académica ha sido descrita como una actividad esencialmente técnica: recopilación de datos, aplicación de métodos y comunicación de resultados.
+
+Sin embargo, evaluaciones internas sugieren que esta descripción resulta incompleta. Diversos analistas han identificado la presencia de procesos creativos significativos dentro del desarrollo y la publicación de investigaciones.
+
+Debido a la naturaleza del análisis, ciertas secciones del presente documento permanecen censuradas.
+
+\section*{I. Naturaleza del proceso investigativo}
+
+Los modelos tradicionales describen la investigación como un procedimiento lineal y metodológico. No obstante, el análisis interno indica que el investigador realiza operaciones cognitivas adicionales tales como la reinterpretación de información existente, la identificación de patrones y la conexión entre conceptos provenientes de distintos contextos.
+
+Conclusión preliminar del análisis:
+
+\rw{Publicar} \rw{una} \rw{investigación} \rw{es} \rw{creativo}
+\rw{porque} \rw{implica} \rw{interpretar} \rw{información},
+\rw{conectar} \rw{ideas} \rw{y} \rw{generar}
+\rw{nuevas} \rw{formas} \rw{de} \rw{comprensión}
+\rw{del} \rw{conocimiento} \rw{existente}.
+
+{\footnotesize\textsc{Archivo clasificado asociado: \texttt{creatividad.txt}}}
+
+\section*{II. Percepción pública}
+
+Las encuestas revisadas indican que una parte importante del público asocia la creatividad exclusivamente con disciplinas artísticas. Como consecuencia, la investigación científica suele percibirse como una actividad puramente mecánica.
+
+Fragmento del informe sociológico:
+
+\rw{La} \rw{sorpresa} \rw{proviene} \rw{de} \rw{reconocer}
+\rw{que} \rw{formular} \rw{preguntas} \rw{nuevas}
+\rw{y} \rw{reinterpretar} \rw{información}
+\rw{también} \rw{constituye} \rw{una}
+\rw{forma} \rw{de} \rw{creatividad}.
+
+{\footnotesize\textsc{Archivo clasificado asociado: \texttt{sorpresa.txt}}}
+
+\section*{III. Mecanismo creativo en la investigación}
+
+El análisis metodológico sugiere que la creatividad no se manifiesta únicamente en los resultados finales de una investigación. Más bien emerge durante el proceso de interpretación, cuando el investigador conecta ideas aparentemente independientes para producir nuevas explicaciones.
+
+Documento asociado:
+
+\rw{La} \rw{creatividad} \rw{surge}
+\rw{cuando} \rw{distintas} \rw{ideas}
+\rw{se} \rw{relacionan} \rw{para}
+\rw{generar} \rw{interpretaciones}
+\rw{que} \rw{antes} \rw{no}
+\rw{estaban} \rw{presentes}
+\rw{en} \rw{el} \rw{marco}
+\rw{teórico} \rw{existente}.
+
+
+{\footnotesize\textsc{Archivo clasificado asociado: \texttt{metodo.txt}}}
+
+\section*{IV. Evaluación del investigador}
+
+Finalmente, el informe solicita determinar si el comportamiento descrito anteriormente puede identificarse en la práctica investigativa del propio sujeto.
+
+Resultado de la evaluación:
+
+\rw{Durante} \rw{el} \rw{proceso}
+\rw{de} \rw{investigación}
+\rw{el} \rw{sujeto}
+\rw{conecta} \rw{ideas},
+\rw{formula}
+\rw{interpretaciones}
+\rw{propias}
+\rw{y} \rw{construye}
+\rw{nuevas}
+\rw{explicaciones}.
+
+{\footnotesize\textsc{Archivo clasificado asociado: \texttt{reflexion.txt}}}
+
+\vspace{2cm}
+
+
+\begin{center}
+
+\includegraphics[width=4cm]{signature.png}
+
+\rule{6cm}{0.4pt}
+
+Director de Análisis\\
+División de Inteligencia
+
+\end{center}
+\vspace{10cm}
+\textit{La idea era presentar y analizar el tema de publicar una investigación mediante un formato de archivo de inteligencia secreto que explica por qué este proceso es creativo, complementado con un sitio web secreto interactivo en el que todos los botones funcionan y todos los archivos contienen información, haciendo la experiencia más atractiva e interesante para el corrector. (Lo que esta en azul se puede clikear)}
+\end{document}

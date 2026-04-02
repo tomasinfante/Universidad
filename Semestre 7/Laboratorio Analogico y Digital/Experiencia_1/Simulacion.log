@@ -1,0 +1,15 @@
+LTspice 24.1.5 for Windows
+Circuit: C:\Users\tomas\OneDrive\Semestre 7\Laboratorio Analogico y Digital\Experiencia_1\Simulacion.net
+Start Time: Mon Mar  9 21:37:02 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.064 seconds.
+
+Files loaded:
+C:\Users\tomas\OneDrive\Semestre 7\Laboratorio Analogico y Digital\Experiencia_1\Simulacion.net
+C:\Users\tomas\AppData\Local\LTspice\lib\sub\opamp.sub
+
